@@ -4,14 +4,19 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Benbulben mountain in North Sligo - hiking routes, history, mythology and visitor information for Ireland's iconic table mountain.">
+  <meta name="keywords" content="Benbulben, Ben Bulben, Sligo mountain, hiking Sligo, Wild Atlantic Way, W.B. Yeats, Ireland">
+  <meta name="author" content="Wild North Sligo College Project">
   <title>Benbulben - Wild North Sligo</title>
   <link rel="stylesheet" href="styles/styles.css">
 </head>
 
 <body>
 
+  <a id="top"></a>
+
   <header>
-    <img src="logo.png" alt="North Sligo Logo" class="logo">
+    <img src="images/favicon.ico" alt="Wild North Sligo Logo" class="logo">
     <h1>The <span class="gold-text">Wild</span> North Sligo</h1>
     <p class="tagline">Landscapes &middot; History &middot; Discovery</p>
   </header>
@@ -19,9 +24,10 @@
   <nav>
     <ul>
       <li><a href="index.html">Home</a></li>
-      <li><a href="benbulben.html">Benbulben</a></li>
+      <li><a href="benbulben.html" class="nav-active">Benbulben</a></li>
+      <li><a href="benbulben-walk.html">Benbulben Walk</a></li>
       <li><a href="streedagh.html">Streedagh Beach</a></li>
-      <li><a href="creevykeel.html">Creevykeel</a></li>
+      <li><a href="mullaghmore.html">Mullaghmore</a></li>
       <li><a href="gleniff.html">Gleniff Horseshoe</a></li>
     </ul>
   </nav>
@@ -29,19 +35,28 @@
   <main>
 
     <section class="page-hero">
-      <img src="images/benbulban.PNG" alt="Benbulben mountain">
+      <img src="images/Benbulban%201.jpg" alt="Benbulben mountain, County Sligo">
       <h2>Benbulben</h2>
     </section>
 
     <section class="page-content">
 
       <h3>About Benbulben</h3>
-      <p>Benbulben is one of Ireland's most iconic mountains, rising dramatically from the plains of County Sligo to a height of 526 metres. Its flat top and sheer limestone cliffs give it a distinctive table-top shape unlike any other mountain in Ireland.</p>
+      <p>Benbulben is one of Ireland's most iconic mountains, rising dramatically from the plains of County Sligo to a height of 526 metres. Its flat top and sheer limestone cliffs give it a distinctive table-top shape unlike any other mountain in Ireland, earning it the nickname <em>Sligo's Table Mountain</em>.</p>
       <p>Formed over 320 million years ago when the area lay beneath a tropical sea, Benbulben was later carved into its current shape by glaciers during the last Ice Age. The mountain is home to rare Arctic alpine plants that have survived here since the glaciers retreated.</p>
-      <p>Benbulben is deeply connected to Irish mythology. It is the legendary site where the hero Diarmuid met his fate on its slopes. The mountain also inspired the poet W.B. Yeats, who is buried nearby at Drumcliff Churchyard in its shadow.</p>
+
+      <h3>Mythology and Literature</h3>
+      <p>Benbulben is deeply connected to Irish mythology. It is the legendary site where the hero Diarmuid met his fate on its slopes, gored by a great boar. The mountain also inspired the poet W.B. Yeats, who is buried nearby at Drumcliff Churchyard in its shadow. His epitaph reads: <em>"Cast a cold eye on life, on death. Horseman, pass by."</em></p>
 
       <h3>What to See and Do</h3>
       <p>The Benbulben Forest Walk is a 5.5km loop beneath the mountain face, taking around 90 minutes and suitable for most fitness levels. More experienced walkers can take the full summit route, a 4 to 5 hour loop with views stretching across Donegal Bay on clear days.</p>
+
+      <h4>Walking Routes</h4>
+      <ol class="visit-list">
+        <li>Benbulben Forest Walk : 5.5km, 90 minutes, easy to moderate</li>
+        <li>Kings Mountain Loop : 12km, 3 to 4 hours, moderate</li>
+        <li>Full Summit Route : 15km, 4 to 5 hours, challenging</li>
+      </ol>
 
       <h3>Good to Know</h3>
       <ul class="info-list">
@@ -57,22 +72,126 @@
       <section class="map-section">
         <h3>Find it on the Map</h3>
         <iframe
-          src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2320.37429825935!2d-8.43590582289428!3d54.43867959243452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee17da64a4b79%3A0x7ecf2c2dd6e0880d!2sCreevykeel%20Court%20Tomb!5e0!3m2!1sen!2sie!4v1773826251620!5m2!1sen!2sie"
+          src="https://maps.google.com/maps?q=54.3752,-8.4767&z=14&output=embed"
           class="map-embed"
           allowfullscreen
           loading="lazy"
           title="Benbulben on Google Maps">
         </iframe>
-        <a href="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2320.37429825935!2d-8.43590582289428!3d54.43867959243452!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x485ee17da64a4b79%3A0x7ecf2c2dd6e0880d!2sCreevykeel%20Court%20Tomb!5e0!3m2!1sen!2sie!4v1773826251620!5m2!1sen!2sie"
-         target="_blank" class="map-link">Open in Google Maps &rarr;</a>
+        <a href="https://www.google.com/maps?q=54.3752,-8.4767" target="_blank" class="map-link">Open in Google Maps &rarr;</a>
       </section>
 
     </section>
 
+    <div id="lightbox" class="lightbox-overlay">
+      <span class="lightbox-close" onclick="closeLightbox()">&#10005;</span>
+      <button class="lightbox-prev" onclick="changePhoto(-1)">&#8249;</button>
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption"></p>
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+      <span>Click background to close</span>
+      <button class="lightbox-next" onclick="changePhoto(1)">&#8250;</button>
+    </div>
+
+    <section class="photo-gallery-section">
+
+      <h2 class="gallery-heading">Photo Gallery</h2>
+      <p class="gallery-intro">Click any photo to enlarge it. Use the arrows to browse.</p>
+
+      <ul class="photo-grid">
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(0)">
+            <span class="photo-label">
+              <img src="images/Benbulban%201.jpg" alt="Benbulben mountain view">
+            </span>
+            <figcaption>Benbulben mountain</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(1)">
+            <span class="photo-label">
+              <img src="images/Benbulban%202.jpg" alt="Benbulben cliffs">
+            </span>
+            <figcaption>Benbulben cliffs</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(2)">
+            <span class="photo-label">
+              <img src="images/Benbulban%205.jpg" alt="Benbulben landscape">
+            </span>
+            <figcaption>Benbulben landscape</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(3)">
+            <span class="photo-label">
+              <img src="images/Benbulban%206.jpg" alt="Benbulben from the valley">
+            </span>
+            <figcaption>Benbulben from the valley</figcaption>
+          </figure>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <script>
+      var photos = [
+        { src: "images/Benbulban%201.jpg", caption: "Benbulben mountain" },
+        { src: "images/Benbulban%202.jpg", caption: "Benbulben cliffs" },
+        { src: "images/Benbulban%205.jpg", caption: "Benbulben landscape" },
+        { src: "images/Benbulban%206.jpg", caption: "Benbulben from the valley" }
+      ];
+
+      var currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        updateLightbox();
+        document.getElementById("lightbox").style.display = "flex";
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+
+      function changePhoto(direction) {
+        currentIndex = (currentIndex + direction + photos.length) % photos.length;
+        updateLightbox();
+      }
+
+      function updateLightbox() {
+        document.getElementById("lightbox-img").src = photos[currentIndex].src;
+        document.getElementById("lightbox-caption").textContent = photos[currentIndex].caption;
+        document.getElementById("lightbox-counter").textContent = (currentIndex + 1) + " / " + photos.length;
+      }
+
+      document.getElementById("lightbox").addEventListener("click", function(e) {
+        if (e.target === this) { closeLightbox(); }
+      });
+    </script>
+
   </main>
 
   <footer>
-    <p>&copy; 2026 North Sligo Tourism. College Project</p>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="benbulben.html">Benbulben</a></li>
+        <li><a href="benbulben-walk.html">Benbulben Walk</a></li>
+        <li><a href="streedagh.html">Streedagh Beach</a></li>
+        <li><a href="mullaghmore.html">Mullaghmore</a></li>
+        <li><a href="gleniff.html">Gleniff Horseshoe</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 North Sligo Tourism : College Project</p>
+    <p class="footer-sources">Text references: F&aacute;ilte Ireland (failteireland.ie), Wikipedia (Benbulben, County Sligo)</p>
+    <a href="#top" class="back-to-top">Back to top &uarr;</a>
   </footer>
 
 </body>

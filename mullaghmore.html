@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Mullaghmore in North Sligo - a picturesque harbour village with a Blue Flag beach, Classiebawn Castle and world-class big wave surfing on the Wild Atlantic Way.">
+  <meta name="keywords" content="Mullaghmore, Mullaghmore Beach, Classiebawn Castle, Sligo surfing, Wild Atlantic Way, Mullaghmore Head, County Sligo">
+  <meta name="author" content="Wild North Sligo College Project">
+  <title>Mullaghmore - Wild North Sligo</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+
+<body>
+
+  <a id="top"></a>
+
+  <header>
+    <img src="images/favicon.ico" alt="Wild North Sligo Logo" class="logo">
+    <h1>The <span class="gold-text">Wild</span> North Sligo</h1>
+    <p class="tagline">Landscapes &middot; History &middot; Discovery</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="index.html">Home</a></li>
+      <li><a href="benbulben.html">Benbulben</a></li>
+      <li><a href="benbulben-walk.html">Benbulben Walk</a></li>
+      <li><a href="streedagh.html">Streedagh Beach</a></li>
+      <li><a href="mullaghmore.html" class="nav-active">Mullaghmore</a></li>
+      <li><a href="gleniff.html">Gleniff Horseshoe</a></li>
+      <li><a href="gallery.html">Gallery</a></li>
+    </ul>
+  </nav>
+
+  <main>
+
+    <section class="page-hero">
+      <img src="images/Mullaghmore%201.JPG" alt="Mullaghmore harbour and Classiebawn Castle, County Sligo">
+      <h2>Mullaghmore</h2>
+    </section>
+
+    <section class="page-content">
+
+      <h3>About Mullaghmore</h3>
+      <p>Mullaghmore is a picturesque fishing village and seaside resort on the north coast of County Sligo, sitting on a small peninsula jutting into Donegal Bay. With its charming 19th-century stone harbour, Blue Flag beach, and the fairytale silhouette of Classiebawn Castle on the headland, it is one of the most photogenic villages on the Wild Atlantic Way.</p>
+      <p>The village was developed in the 19th century as part of the large estate belonging to Lord Palmerston, the British Prime Minister, who built both the stone harbour between 1822 and 1841 and commissioned Classiebawn Castle. The castle was designed by Dublin architect J. Rawson Carroll and completed in 1874. It is privately owned and not open to the public, but its distinctive conical turret is visible from all around the peninsula.</p>
+      <p>Mullaghmore is internationally known in the surfing world for the enormous waves that break off the headland during Atlantic storms between October and March. In March 2012, surfers from around the world rode waves confirmed at over 15 metres high, and the break is regularly cited as one of the most thrilling big wave surf spots in Europe.</p>
+
+      <h3>The Beach</h3>
+      <p>Mullaghmore Beach stretches for approximately 3km around the sheltered south side of the peninsula. The calm, shallow waters make it ideal for swimming, windsurfing and kayaking, and the beach holds Blue Flag status. Views from the sand take in Benbulben to the south and the cliffs of Donegal to the north.</p>
+
+      <h3>What to See and Do</h3>
+      <p>The 8km Mullaghmore Head Walk loops around the entire peninsula on a combination of footpaths and coastal roads. The walk passes Classiebawn Castle, offers views of Donegal Bay and Slieve League on clear days, and follows the dramatic cliffs of the headland where the big wave break is visible below. Boat trips to Inishmurray Island are available from the harbour during summer.</p>
+
+      <h4>Highlights</h4>
+      <ol class="visit-list">
+        <li>Classiebawn Castle : dramatic Victorian castle on the headland</li>
+        <li>Mullaghmore Beach : 3km Blue Flag beach, safe for swimming</li>
+        <li>Mullaghmore Head Walk : 8km coastal loop with stunning views</li>
+        <li>Big wave surfing : world-class break off the headland in winter</li>
+        <li>Inishmurray Island boat trips : summer departures from the harbour</li>
+      </ol>
+
+      <h3>Good to Know</h3>
+      <ul class="info-list">
+        <li>Beach: Blue Flag, 3km, safe for swimming</li>
+        <li>Head Walk: 8km loop, easy to moderate</li>
+        <li>Nearest town: Cliffoney (3km)</li>
+        <li>Distance from Sligo: 26km north on N15 then R279</li>
+      </ul>
+
+      <h3>Getting There</h3>
+      <p>From Sligo town, take the N15 north for approximately 22km. At Cliffoney village, turn left onto the R279 and follow signs for Mullaghmore. The village, harbour and beach are 4km further along this road.</p>
+
+      <section class="map-section">
+        <h3>Find it on the Map</h3>
+        <iframe
+          src="https://maps.google.com/maps?q=54.4664,-8.4486&z=14&output=embed"
+          class="map-embed"
+          allowfullscreen
+          loading="lazy"
+          title="Mullaghmore on Google Maps">
+        </iframe>
+        <a href="https://www.google.com/maps?q=54.4664,-8.4486" target="_blank" class="map-link">Open in Google Maps &rarr;</a>
+      </section>
+
+    </section>
+
+    <div id="lightbox" class="lightbox-overlay">
+      <span class="lightbox-close" onclick="closeLightbox()">&#10005;</span>
+      <button class="lightbox-prev" onclick="changePhoto(-1)">&#8249;</button>
+      <img id="lightbox-img" src="" alt="">
+      <p id="lightbox-caption"></p>
+      <span class="lightbox-counter" id="lightbox-counter"></span>
+      <span>Click background to close</span>
+      <button class="lightbox-next" onclick="changePhoto(1)">&#8250;</button>
+    </div>
+
+    <section class="photo-gallery-section">
+
+      <h2 class="gallery-heading">Photo Gallery</h2>
+      <p class="gallery-intro">Click any photo to enlarge it. Use the arrows to browse.</p>
+
+      <ul class="photo-grid">
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(0)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%201.JPG" alt="Mullaghmore harbour">
+            </span>
+            <figcaption>Mullaghmore harbour</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(1)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%202.JPG" alt="Mullaghmore coastline">
+            </span>
+            <figcaption>Mullaghmore coastline</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(2)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%203.JPG" alt="Classiebawn Castle">
+            </span>
+            <figcaption>Boy looks out to the sea</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(3)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%204.JPG" alt="Mullaghmore beach">
+            </span>
+            <figcaption>Mullaghmore beach</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(4)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%205.JPG" alt="Mullaghmore headland">
+            </span>
+            <figcaption>Mullaghmore headland</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(5)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%206.JPG" alt="Mullaghmore views">
+            </span>
+            <figcaption>Mullaghmore views</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(6)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%207.JPG" alt="Mullaghmore peninsula">
+            </span>
+            <figcaption>Mullaghmore peninsula</figcaption>
+          </figure>
+        </li>
+
+        <li>
+          <figure class="photo-card" onclick="openLightbox(7)">
+            <span class="photo-label">
+              <img src="images/Mullaghmore%208.jpg" alt="Mullaghmore scenery">
+            </span>
+            <figcaption>Mullaghmore scenery</figcaption>
+          </figure>
+        </li>
+
+      </ul>
+
+    </section>
+
+    <script>
+      var photos = [
+        { src: "images/Mullaghmore%201.JPG", caption: "Mullaghmore harbour" },
+        { src: "images/Mullaghmore%202.JPG", caption: "Mullaghmore coastline" },
+        { src: "images/Mullaghmore%203.JPG", caption: "Boy looks out to the sea" },
+        { src: "images/Mullaghmore%204.JPG", caption: "Mullaghmore beach" },
+        { src: "images/Mullaghmore%205.JPG", caption: "Mullaghmore headland" },
+        { src: "images/Mullaghmore%206.JPG", caption: "Mullaghmore views" },
+        { src: "images/Mullaghmore%207.JPG", caption: "Mullaghmore peninsula" },
+        { src: "images/Mullaghmore%208.jpg", caption: "Mullaghmore scenery" }
+      ];
+
+      var currentIndex = 0;
+
+      function openLightbox(index) {
+        currentIndex = index;
+        updateLightbox();
+        document.getElementById("lightbox").style.display = "flex";
+      }
+
+      function closeLightbox() {
+        document.getElementById("lightbox").style.display = "none";
+      }
+
+      function changePhoto(direction) {
+        currentIndex = (currentIndex + direction + photos.length) % photos.length;
+        updateLightbox();
+      }
+
+      function updateLightbox() {
+        document.getElementById("lightbox-img").src = photos[currentIndex].src;
+        document.getElementById("lightbox-caption").textContent = photos[currentIndex].caption;
+        document.getElementById("lightbox-counter").textContent = (currentIndex + 1) + " / " + photos.length;
+      }
+
+      document.getElementById("lightbox").addEventListener("click", function(e) {
+        if (e.target === this) { closeLightbox(); }
+      });
+    </script>
+
+  </main>
+
+  <footer>
+    <nav class="footer-nav">
+      <ul>
+        <li><a href="index.html">Home</a></li>
+        <li><a href="benbulben.html">Benbulben</a></li>
+        <li><a href="benbulben-walk.html">Benbulben Walk</a></li>
+        <li><a href="streedagh.html">Streedagh Beach</a></li>
+        <li><a href="mullaghmore.html">Mullaghmore</a></li>
+        <li><a href="gleniff.html">Gleniff Horseshoe</a></li>
+        <li><a href="gallery.html">Gallery</a></li>
+      </ul>
+    </nav>
+    <p>&copy; 2026 North Sligo Tourism : College Project</p>
+    <p class="footer-sources">Text references: F&aacute;ilte Ireland (failteireland.ie), Wikipedia (Mullaghmore, County Sligo)</p>
+    <a href="#top" class="back-to-top">Back to top &uarr;</a>
+  </footer>
+
+</body>
+</html>
